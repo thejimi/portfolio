@@ -10,11 +10,16 @@
     window.location.href = ('./uczen/index')
 </script> -->
 <script>
-    var pass = prompt('password?')
-    if(pass === 'szczyny'){
+    if(localStorage.getItem("passed") === "true"){
         window.location.href = ('./uczen/index')
     } else {
-        alert("wrong")
+        var pass = prompt('password?')
+        if(pass === 'szczyny'){
+            localStorage.setItem("passed", "true")
+            window.location.href = ('./uczen/index')
+        } else {
+            alert("wrong")
+        }
     }
 </script>
 </html>
