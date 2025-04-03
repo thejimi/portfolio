@@ -6,7 +6,15 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="shortcut icon" href="./synergia.png" type="image/png">
 </head>
-<script>
+<!-- <script>
     window.location.href = ('./uczen/index')
+</script> -->
+<script>
+    var pass = prompt('password?')
+    if(pass === 'szczyny'){
+        window.location.href = ('./uczen/index')
+    } else {
+        alert("wrong")
+    }
 </script>
 </html>
